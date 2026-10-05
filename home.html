@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transly AI – AI Translation App</title>
+  <meta name="description" content="Transly AI is an AI-powered translation app for text, voice and images, with offline support." />
+  <style>
+    :root {
+      --accent: #f4511e;
+      --accent-dark: #d84315;
+      --bg: #ffffff;
+      --surface: #f6f6f7;
+      --text: #1c1c1e;
+      --muted: #6b6b70;
+      --border: #e4e4e7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121214;
+        --surface: #1c1c1f;
+        --text: #f2f2f3;
+        --muted: #a0a0a8;
+        --border: #2c2c31;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 64px 0 40px; text-align: center; }
+    .logo {
+      width: 88px; height: 88px; border-radius: 20px;
+      background: linear-gradient(160deg, #ff7043, var(--accent-dark));
+      display: inline-flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 34px; font-weight: 700; letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 12px; }
+    .tagline { color: var(--muted); font-size: 1.1rem; max-width: 520px; margin: 0 auto; }
+    section { padding: 24px 0; }
+    h2 { font-size: 1.25rem; margin-bottom: 14px; }
+    .features { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .card h3 { font-size: 1rem; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .data p { color: var(--muted); margin-bottom: 10px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 32px; padding: 28px 0 40px;
+      border-top: 1px solid var(--border);
+      text-align: center; color: var(--muted); font-size: 0.95rem;
+    }
+    footer nav { margin-bottom: 10px; }
+    footer nav a { margin: 0 10px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">文A</div>
+      <h1>Transly AI</h1>
+      <p class="tagline">An AI-powered translation app that helps you translate text, voice and images quickly and accurately, online or offline.</p>
+    </header>
+
+    <section>
+      <h2>What Transly AI does</h2>
+      <div class="features">
+        <div class="card">
+          <h3>AI text translation</h3>
+          <p>Natural, context-aware translations between many languages.</p>
+        </div>
+        <div class="card">
+          <h3>Camera and image</h3>
+          <p>Translate text from photos and images in seconds.</p>
+        </div>
+        <div class="card">
+          <h3>Voice input</h3>
+          <p>Speak and get your words translated instantly.</p>
+        </div>
+        <div class="card">
+          <h3>Offline mode</h3>
+          <p>Keep translating on your device without an internet connection.</p>
+        </div>
+        <div class="card">
+          <h3>Synced history</h3>
+          <p>Sign in to keep your translation history across devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="data">
+      <h2>Sign in with Google</h2>
+      <p>Transly AI lets you sign in with your Google account. When you do, the app receives only your basic profile information (name, email address and profile picture). It is used solely to create and identify your account and to sync your translation history.</p>
+      <p>Transly AI does not sell your data or share it with third parties for advertising. Full details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <p>&copy; 2026 Transly AI. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
